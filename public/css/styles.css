@@ -23,7 +23,7 @@ img.clam_image:hover {
 }
 
 #clam_text {
-  position: absolute;
+  position: fixed;
   font-size: 300px;
   z-index: 100;
   left: 50%; 
