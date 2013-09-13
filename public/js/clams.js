@@ -57,6 +57,7 @@ var clamGenerator = {
         var img = document.createElement('img');
         img.src = this.constructClamURL_(clams[i]);
         img.setAttribute('alt', clams[i].getAttribute('title'));
+        img.setAttribute('title', clams[i].getAttribute('title'));
         img.setAttribute("class", "clam_image");
         document.body.appendChild(img);
       }
