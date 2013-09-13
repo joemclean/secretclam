@@ -7,9 +7,15 @@
     <script>
       $(document).ready(function(){
         $("#johnny_button").click(function(){
+          document.getElementById('hallway').pause();
           $("#johnny_image").animate({marginTop:"+=1000px"});
           document.getElementById('aah').currentTime = 0;
           document.getElementById('aah').play();
+        });
+
+        $("#johnny_image").click(function(){
+          document.getElementById('hallway').currentTime = 0;
+          document.getElementById('hallway').play();
         });
       });
     </script>
@@ -23,6 +29,7 @@
     johnny ...
     <br />
     <audio id="aah" src="/audio/aah.mp3" preload="auto"></audio>
+    <audio id="hallway" src="/audio/hallway.mp3" preload="auto"></audio>
     <button type="button" id="johnny_button">Drop Johnny</button>
     <br />
     <img src="/images/johnny.jpg" id="johnny_image"></img>

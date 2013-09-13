@@ -45,6 +45,7 @@ img.clam_image:hover {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  cursor: pointer;
 }
 
 #johnny_button {
