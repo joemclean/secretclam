@@ -52,40 +52,14 @@ var clamGenerator = {
    */
   showPhotos_: function (e) {
     var clams = e.target.responseXML.querySelectorAll('photo');
-    for (var i = 0; i < clams.length; i++) {
-      var img = document.createElement('img');
-      img.src = this.constructClamURL_(clams[i]);
-      img.setAttribute('alt', clams[i].getAttribute('title'));
-      img.setAttribute("class", "clam_image");
-      document.body.appendChild(img);
-    }
-    for (var i = 0; i < clams.length; i++) {
-      var img = document.createElement('img');
-      img.src = this.constructClamURL_(clams[i]);
-      img.setAttribute('alt', clams[i].getAttribute('title'));
-      img.setAttribute("class", "clam_image");
-      document.body.appendChild(img);
-    }
-    for (var i = 0; i < clams.length; i++) {
-      var img = document.createElement('img');
-      img.src = this.constructClamURL_(clams[i]);
-      img.setAttribute('alt', clams[i].getAttribute('title'));
-      img.setAttribute("class", "clam_image");
-      document.body.appendChild(img);
-    }
-    for (var i = 0; i < clams.length; i++) {
-      var img = document.createElement('img');
-      img.src = this.constructClamURL_(clams[i]);
-      img.setAttribute('alt', clams[i].getAttribute('title'));
-      img.setAttribute("class", "clam_image");
-      document.body.appendChild(img);
-    }
-    for (var i = 0; i < clams.length; i++) {
-      var img = document.createElement('img');
-      img.src = this.constructClamURL_(clams[i]);
-      img.setAttribute('alt', clams[i].getAttribute('title'));
-      img.setAttribute("class", "clam_image");
-      document.body.appendChild(img);
+    for (var n = 0; n < 10; n++) {
+      for (var i = 0; i < clams.length; i++) {
+        var img = document.createElement('img');
+        img.src = this.constructClamURL_(clams[i]);
+        img.setAttribute('alt', clams[i].getAttribute('title'));
+        img.setAttribute("class", "clam_image");
+        document.body.appendChild(img);
+      }
     }
 
     $('.clam_image').click(function(){
