@@ -38,3 +38,17 @@ img.clam_image:hover {
 .gone {
   opacity: 1 !important;
 }
+
+#johnny_image {
+  width: 180px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#johnny_button {
+  margin: 20px auto;
+  display: block;
+  font-size: 1.1em
+}

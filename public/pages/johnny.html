@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Secret Clam</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#johnny_button").click(function(){
+          $("#johnny_image").animate({marginTop:"+=1000px"});
+          document.getElementById('aah').currentTime = 0;
+          document.getElementById('aah').play();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <a href="../index.html">Home</a> ... 
+    <a href="/pages/video.html">best clam videos</a> ...
+    <a href="/pages/eddie.html">eddie</a> ... 
+    <a href="/pages/weather.html">weather</a> ... 
+    <a href="/pages/sandwich.html">sandwich</a> ... 
+    johnny ...
+    <br />
+    <audio id="aah" src="/audio/aah.mp3" preload="auto"></audio>
+    <button type="button" id="johnny_button">Drop Johnny</button>
+    <br />
+    <img src="/images/johnny.jpg" id="johnny_image"></img>
+    <br />
+  </body>
+</html>
