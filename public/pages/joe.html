@@ -14,7 +14,7 @@
   ga('send', 'pageview');
 
   $(document).ready(function(){
-    $("#joe_image").click(function(){
+    $("#joe_button").click(function(){
       document.getElementById('thinking').currentTime = 0;
       document.getElementById('thinking').play();
       $("#joe_image").animate({width:"+=20000px", marginTop:"+=-10000px", marginLeft:"+=-10000"},200000);
@@ -33,6 +33,7 @@
     <a href="/pages/johnny.html">johnny</a> ... 
     joe ... 
     <br />
+    <button type="button" id="joe_button">Contemplate</button>
     <img src="/images/joe.jpg" id="joe_image"/>
   </body>
 </html>
