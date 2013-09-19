@@ -27,7 +27,7 @@ var clamGenerator = {
       'safe_search=1&' +
       'content_type=1&' +
       'sort=interestingness-desc&' +
-      'per_page=105',
+      'per_page=35',
 
   /**
    * Sends an XHR GET request to grab photos of lots and lots of kittens. The
