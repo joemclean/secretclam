@@ -68,3 +68,54 @@ img.clam_image:hover {
   font-size: 1.1em;
   cursor: pointer;
 }
+
+#dave_button {
+  margin: 20px auto;
+  display: block;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+#dave_image {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  opacity: 0.0;
+}
+
+#relaxation {
+  text-align: center;
+}
+
+.dave_rain {
+  width: 100px;
+  position: absolute;
+  top:-100px;
+}
+
+#rain1 {
+  left: 12%;
+}
+
+#rain2 {
+  left: 24%;
+}
+#rain3 {
+  left: 36%;
+}
+#rain4 {
+  left: 48%;
+}
+#rain5 {
+  left: 60%;
+}
+#rain6 {
+  left: 72%;
+}
+#rain7 {
+  left: 84%;
+}
+
+#rain_wrapper {
+  width: 100%;
+}
