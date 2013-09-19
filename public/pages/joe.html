@@ -15,8 +15,9 @@
 
   $(document).ready(function(){
     $("#joe_button").click(function(){
-      document.getElementById('thinking').currentTime = 0;
-      document.getElementById('thinking').play();
+      var underground = document.getElementById('underground')
+      underground.currentTime = 0;
+      underground.play();
       $("#joe_image").animate({width:"+=20000px", marginTop:"+=-10000px", marginLeft:"+=-10000"},200000);
     });
   });
@@ -24,7 +25,7 @@
 </script>
   </head>
   <body>
-    <audio id="thinking" src="/audio/underground.mp3" preload="auto"></audio>
+    <audio id="underground" src="/audio/underground.mp3" preload="auto"></audio>
     <a href="../index.html">Home</a> ... 
     <a href="/pages/video.html">best clam videos</a> ...
     <a href="/pages/eddie.html">eddie</a> ... 
