@@ -18,8 +18,10 @@
 
   $(document).ready(function(){
     $("#dave_button").click(function(){
-      document.getElementById('rain').currentTime = 0;
-      document.getElementById('rain').play({loop: true});
+      var rain = document.getElementById('rain');
+      rain.loop = true;
+      rain.currentTime = 0;
+      rain.play();
       $('#dave_image').animate({opacity:"0.7"}, 2000);
 
 
@@ -82,11 +84,19 @@
         setTimeout(rain7, 5012);
       });
     });
+
+    $('#dave_image').click(function(){
+      var drum = document.getElementById('drum');
+      drum.currentTime = 0;
+      drum.play();
+    });
   });
 
 </script>
   </head>
   <body>
+    <audio id="rain" src="/audio/rain.mp3" preload="auto"></audio>
+    <audio id="drum" src="/audio/drums.mp3" preload="auto"></audio>
     <div id="rain_wrapper">
       <img src="/images/distance_dave.png" class="dave_rain" id="rain1"></img>
       <img src="/images/distance_dave.png" class="dave_rain" id="rain2"></img>
@@ -95,19 +105,18 @@
       <img src="/images/distance_dave.png" class="dave_rain" id="rain5"></img>
       <img src="/images/distance_dave.png" class="dave_rain" id="rain6"></img>
       <img src="/images/distance_dave.png" class="dave_rain" id="rain7"></img>
+      <a href="../index.html">Home</a> ... 
+      <a href="/pages/video.html">best clam videos</a> ...
+      <a href="/pages/eddie.html">eddie</a> ... 
+      <a href="/pages/weather.html">weather</a> ... 
+      <a href="/pages/sandwich.html">sandwich</a> ... 
+      <a href="/pages/johnny.html">johnny</a> ... 
+      <a href="/pages/joe.html">joe</a> ... 
+      dave ... 
+      <br />
+      <h3 id="relaxation"> **RELAXATION PAGE**</h3>
+      <button type="button" id="dave_button">Rainy Dave</button>
+      <img src="/images/distance_dave.png" id="dave_image"></img>
     </div>
-    <audio id="rain" src="/audio/rain.mp3" preload="auto"></audio>
-    <a href="../index.html">Home</a> ... 
-    <a href="/pages/video.html">best clam videos</a> ...
-    <a href="/pages/eddie.html">eddie</a> ... 
-    <a href="/pages/weather.html">weather</a> ... 
-    <a href="/pages/sandwich.html">sandwich</a> ... 
-    <a href="/pages/johnny.html">johnny</a> ... 
-    <a href="/pages/joe.html">joe</a> ... 
-    dave ... 
-    <br />
-    <h3 id="relaxation"> **RELAXATION PAGE**</h3>
-    <button type="button" id="dave_button">Rainy Dave</button>
-    <img src="/images/distance_dave.png" id="dave_image"></img>
   </body>
 </html>
