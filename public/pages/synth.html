@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Secret Clam</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+		<script src="/js/main.js"></script>
+		<script src="/js/keyboard.js"></script>
+		<script src="/js/jquery.knob.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/keyboard.css">
+		<link rel="stylesheet" type="text/css" href="/css/synth.css">
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-41641496-2', 'secretclammusic.net');
+  ga('send', 'pageview');
+
+</script>
+  </head>
+  <body>
+    <a href="../index.html">Home</a> ... 
+    <a href="/pages/video.html">best clam videos</a> ...
+    <a href="/pages/eddie.html">eddie</a> ... 
+    weather ... 
+    <a href="/pages/sandwich.html">sandwich</a> ... 
+    <a href="/pages/johnny.html">johnny</a> ... 
+    <a href="/pages/joe.html">joe</a> ... 
+    <a href="/pages/synth.html">synth</a> ... 
+    <a href="/pages/dave.html">dave</a> ... 
+    <br />
+    <h3 class='center'>/---PLAY A SYNTH SOLO---\</h3>
+
+    <iframe style="border: 0; width: 500px; height: 120px; margin: 20px auto;" src="http://bandcamp.com/EmbeddedPlayer/album=3985319786/size=medium/bgcol=333333/linkcol=ffffff/t=2/transparent=true/" seamless><a href="http://secretcove.bandcamp.com/album/shaun-city-i">Shaun City I by Secret Cove</a></iframe>
+    <div id="synth">
+	    <div class='dial_box'>
+				<input type="text" value="75" class="dial" id="volume" data-width="100" data-height="100" data-angleOffset="-125"
+				data-angleArc="250" data-displayInput="false"/>
+				Volume
+			</div>
+			<div class='dial_box'>
+				<input type="text" value="0" class="dial" id="attack" data-width="100" data-height="100" data-angleOffset="-125"
+				data-angleArc="250" data-displayInput="false"/>
+				Attack
+			</div>
+			<div class='dial_box'>
+				<input type="text" value="0" class="dial" id="decay" data-width="100" data-height="100" data-angleOffset="-125"
+				data-angleArc="250" data-displayInput="false"/>
+				Decay
+			</div>
+			<div id="keyboard">
+				<div>
+				  <div class="key white_key" id="C4">C4</div>
+				  <div class="key white_key" id="D4">D4</div> 
+				  <div class="key white_key" id="E4">E4</div> 
+				  <div class="key white_key" id="F4">F4</div> 
+				  <div class="key white_key" id="G4">G4</div> 
+				  <div class="key white_key" id="A4">A4</div> 
+				  <div class="key white_key" id="B4">B4</div> 
+				  <div class="key white_key" id="C5">C5</div>
+				</div>
+				<div id="black_keys">
+				  <div class="key black_key" id="CS4">C#4</div>
+				  <div class="key black_key right" id="DS4">D#4</div>
+				  <div class="key black_key" id="FS4">F#4</div>
+				  <div class="key black_key" id="GS4">G#4</div>
+				  <div class="key black_key right" id="AS4">A#4</div>
+				</div>
+			</div>
+		</div>
+  </body>
+</html>
+
+

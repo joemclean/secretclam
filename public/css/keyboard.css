@@ -1,0 +1,47 @@
+body {
+	font-family: Helvetica, Arial, Sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+div.key {
+	cursor: pointer;
+	float: left;
+	text-align: center;
+	font-weight: bold;
+}
+
+.key_press {
+	background-color: #89CCEC !important;
+}
+
+div.white_key {
+	background-color: #eeeeee;
+	border: 1px solid #fff;
+	width: 48px;
+	padding: 150px 0px 50px 0px;
+	color: #666;
+}
+
+div.black_key {
+	background-color: #888888;
+	border: 2px solid #fff;
+	width: 26px;
+	padding: 50px 0px 50px 0px;
+	margin-right:20px;
+	pointer-events: auto;
+	color: #fff;
+	font-size: 12px;
+}
+
+#black_keys div.right {
+	margin-right:70px;
+}
+
+#black_keys {
+	margin-left:-365px;
+	float:left;
+	pointer-events: none;
+}
