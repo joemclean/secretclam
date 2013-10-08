@@ -62,7 +62,7 @@ var clamGenerator = {
         document.body.appendChild(img);
       }
     }
-
+x
     $('.clam_image').click(function(){
       $('#clam_text').show();
       document.getElementById('clam_sound').currentTime = 0;
