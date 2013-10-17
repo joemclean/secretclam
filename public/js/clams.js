@@ -62,7 +62,6 @@ var clamGenerator = {
         document.body.appendChild(img);
       }
     }
-x
     $('.clam_image').click(function(){
       $('#clam_text').show();
       document.getElementById('clam_sound').currentTime = 0;
@@ -93,5 +92,4 @@ x
 // Run our kitten generation script as soon as the document's DOM is ready.
 document.addEventListener('DOMContentLoaded', function () {
   clamGenerator.requestClams();
-
 });
